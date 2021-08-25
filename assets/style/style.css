@@ -1,8 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0px;
+}
+
 #navTron {
-    background: #a98c6f;
+    background: #add9d8;
     margin-bottom: 0px;
     padding: 1px;
-    color: white;
+    color: rgb(29, 51, 77);
 }
 
 #navTron li {
@@ -14,10 +23,27 @@
 .jumbotron {
     text-align: center;
     padding: 60px;
-    background: #2a1a11;
-    color: white;
+    background: #3dd9d6;
+    color: rgb(29, 51, 77);
+}
+
+main {
+    padding: 10px;
 }
 
 .logoApp {
     max-height: 150px;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+    background: #3dd9d6;
+    margin: 0;
 }
