@@ -1,0 +1,23 @@
+#navTron {
+    background: #a98c6f;
+    margin-bottom: 0px;
+    padding: 1px;
+    color: white;
+}
+
+#navTron li {
+    display: inline;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    padding: 60px;
+    background: #2a1a11;
+    color: white;
+}
+
+.logoApp {
+    max-height: 150px;
+}
