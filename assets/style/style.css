@@ -1,49 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-}
-
-header {
-    margin: 0px;
+    font-family: 'Nunito', sans-serif;
 }
 
 #navTron {
-    background: #add9d8;
-    margin-bottom: 0px;
+    color: white;
+    background: #009fc7;
     padding: 1px;
-    color: rgb(29, 51, 77);
 }
 
-#navTron li {
-    display: inline;
-    text-align: right;
+#navTron ul li {
     padding-right: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    display: inline;
 }
 
-.jumbotron {
+#navTron ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navTron ul li a:hover {
+    font-weight: bold;
+}
+
+#jumboTron {
+    margin-top: 0;
+    background: #00c7ed;
+    padding: 80px;
+    color: white;
     text-align: center;
-    padding: 60px;
-    background: #3dd9d6;
-    color: rgb(29, 51, 77);
+    font-size: 20px;
 }
 
 main {
+    margin: 15px;
     padding: 10px;
+    float: left;
 }
 
-.logoApp {
-    max-height: 150px;
+main p {
+    text-align: justify;
 }
 
 .card {
     border-radius: 5px;
+    padding: 20px;
+    max-width: 700px;
+    border: rgba(192, 192, 192, 0.479) solid 1.5px;
+}
+
+#listArtc ol li a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+#listArtc ol li a:hover {
+    color: #009fc7;
+    font-weight: bold;
+
+}
+
+.logoApp {
+    max-height: 150px;
+    margin-bottom: 10px;
+    padding-right: 25px;
+}
+
+aside {
+    float: right;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    border: rgba(192, 192, 192, 0.479) solid 1px;
+    padding-bottom: 10px;
+}
+
+#mySocmed img {
+    width: 60px;
     padding: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 footer p {
     padding: 20px;
     text-align: center;
-    background: #3dd9d6;
+    background: #00c7ed;
     margin: 0;
+    color: white;
+    font-weight: bold;
 }
