@@ -10,10 +10,16 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+header {
+    display: inline;
+}
+
 #navTron {
     color: white;
     background: #009fc7;
     padding: 1px;
+    position: sticky;
+    top: 0;
 }
 
 #navTron ul li {
@@ -47,7 +53,7 @@ main {
 
 .content {
     float: left;
-    width: 75%;
+    width: 84%;
 }
 
 .card {
@@ -56,6 +62,7 @@ main {
     border-radius: 5px;
     padding: 20px;
     border: rgba(139, 139, 139, 0.479) solid 1px;
+    border-radius: 10px;
 }
 
 .card p {
@@ -81,9 +88,18 @@ main {
 
 aside {
     float: right;
-    width: 24%;
+    width: 15%;
     text-align: center;
     border: rgba(192, 192, 192, 0.479) solid 1px;
+}
+
+.card aside {
+    border-radius: 30px;
+}
+
+aside img {
+    max-width: 45px;
+    padding-bottom: 10px;
 }
 
 footer p {
@@ -96,6 +112,10 @@ footer p {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .logoApp {
+        max-width: 40%;
+    }
 
     .content,
     aside {
