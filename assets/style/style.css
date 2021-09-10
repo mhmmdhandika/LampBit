@@ -50,15 +50,15 @@ header {
 
 main {
     margin: 25px;
+    display: flex;
 }
 
 .content {
-    float: left;
-    width: 88%;
+    flex: 15;
 }
 
 .card {
-    margin-bottom: 13px;
+    margin: 0 12px 12px 0;
     padding: 30px;
     border: rgba(139, 139, 139, 0.479) solid 1px;
     border-radius: 10px;
@@ -73,12 +73,12 @@ article h1,
     text-align: justify;
 }
 
-#listArtc ol li a {
+#listArticle ol li a {
     text-decoration: none;
     color: darkcyan;
 }
 
-#listArtc ol li a:hover {
+#listArticle ol li a:hover {
     color: #009fc7;
     font-weight: bold;
 
@@ -91,14 +91,14 @@ article h1,
 }
 
 aside {
-    float: right;
-    width: 11%;
+    flex: 1;
     text-align: center;
     border: rgba(192, 192, 192, 0.479) solid 1px;
+    height: fit-content;
 }
 
 aside img {
-    width: 40px;
+    width: 35px;
     padding-bottom: 19px;
     transition: 0.2s;
 }
