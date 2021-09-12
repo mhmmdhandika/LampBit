@@ -14,32 +14,42 @@ header {
     display: inline;
 }
 
-#navTron {
+#containerNav {
+    display: flex;
+    align-items: center;
     color: white;
     background: #009fc7;
-    padding: 1px;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-#navTron ul li {
-    padding-right: 20px;
-    margin-right: 20px;
-    padding: 0px;
-    display: inline;
+#containerNav nav {
+    margin-right: 15px;
 }
 
-#navTron ul li a {
+#containerNav h2 {
+    margin: 15px;
+    padding-left: 12px;
+    flex: 1;
+}
+
+#containerNav nav ul li {
+    display: inline;
+    flex: 1;
+    padding: 15px;
+}
+
+#containerNav nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-#navTron ul li a:hover {
+#containerNav nav ul li a:hover {
     font-weight: bold;
 }
 
-#jumboTron {
+#jumbotron {
     margin-top: 0;
     background: #00c7ed;
     padding: 80px;
@@ -49,8 +59,8 @@ header {
 }
 
 main {
-    margin: 25px;
     display: flex;
+    margin: 25px;
 }
 
 .content {
@@ -88,6 +98,7 @@ article h1,
     max-height: 150px;
     margin-bottom: 10px;
     padding-right: 25px;
+    float: left;
 }
 
 aside {
