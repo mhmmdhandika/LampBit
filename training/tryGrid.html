@@ -13,8 +13,13 @@
             margin: auto;
 
             display: grid;
-            grid-template-columns: 100px auto min-content;
-            grid-template-rows: repeat(2, 90px) 50px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'sidebar content content'
+                'footer footer footer';
+            gap: 5px;
         }
 
         .item {
@@ -22,25 +27,65 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            box-sizing: border-box;
+            color: white;
         }
 
-        .item:nth-child(even) {
-            background-color: paleturquoise;
+        .sidebar,
+        .content {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: coral;
+            padding: 30px;
+
+            grid-area: header;
+        }
+
+        .sidebar {
+            background-color: rgb(159, 91, 223);
+
+            grid-area: sidebar;
+        }
+
+        .content {
+            background-color: rgb(100, 189, 12);
+            text-align: justify;
+            border: 0;
+
+            grid-area: content;
+        }
+
+        .footer {
+            background-color: rgb(216, 91, 116);
+            height: 40px;
+            grid-area: footer;
+        }
+
+        /* Responsive Breakpoint */
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-areas:
+                    'header header header'
+                    'sidebar sidebar sidebar'
+                    'content content content'
+                    'footer footer footer';
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
+        <div class="item header">header</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut assumenda maxime eaque in magni adipisci
+                sint voluptate asperiores dolores, mollitia velit, alias, ipsam laboriosam! Possimus maiores eum
+                quibusdam odio illum.</p>
+        </div>
+        <div class="item footer">footer</div>
     </div>
 </body>
 
