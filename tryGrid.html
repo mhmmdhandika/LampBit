@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 100px auto 15%;
+            grid-template-rows: 60px 150px 20px;
+        }
+
+        .item {
+            background-color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>
