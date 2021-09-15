@@ -14,6 +14,8 @@
 
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+
+            /* Grid Area and Grid Gap */
             grid-template-areas:
                 'header header header'
                 'sidebar content content'
@@ -33,7 +35,7 @@
 
         .sidebar,
         .content {
-            padding: 20px;
+            padding: 0 20px 0 20px;
         }
 
         .header {
