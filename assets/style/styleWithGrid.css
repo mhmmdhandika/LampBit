@@ -5,7 +5,7 @@
     grid-template-columns: 1fr repeat(2, 4fr) 3fr;
     grid-template-areas:
         'header header header header'
-        'aside1 main main aside2'
+        'aside main main form'
         'footer footer footer footer';
     gap: 10px;
 }
@@ -48,29 +48,70 @@ main article img {
     padding-right: 20px;
 }
 
-#aside1 {
-    grid-area: aside1;
+aside {
+    grid-area: aside;
     display: grid;
     justify-items: end;
     padding-top: 30px;
     padding-right: 5px;
 }
 
-#aside1 div a img {
+aside div a img {
     display: block;
     max-height: 45px;
 }
 
-#aside2 {
-    background-color: sandybrown;
-    grid-area: aside2;
+form {
+    grid-area: form;
 }
 
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-content: end center;
+    grid-template-areas:
+        'legend legend'
+        'name box1'
+        'comment box2'
+        'send send';
+    margin-right: 20px;
+}
+
+fieldset #nama {
+    grid-area: name;
+}
+
+fieldset #name {
+    grid-area: box1;
+}
+
+fieldset #komentar {
+    grid-area: comment;
+}
+
+fieldset #comment {
+    grid-area: box2;
+}
+
+fieldset #send {
+    grid-area: send;
+}
+
+fieldset label {
+    margin-right: 10px;
+}
+
+fieldset input {
+    margin: 5px 0 5px 0;
+}
+
+
+/* Footer */
 footer {
+    grid-area: footer;
     background-color: #009fc7;
     text-align: center;
     color: white;
-    grid-area: footer;
     height: max-content;
     padding: 5px;
 }
