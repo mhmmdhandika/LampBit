@@ -68,36 +68,43 @@ form {
     grid-area: form;
 }
 
+
+/* Form */
 fieldset {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, auto);
     place-content: end center;
     grid-template-areas:
-        'legend legend'
-        'name box1'
-        'comment box2'
-        'send send';
+        'box1 box1'
+        'box2 box3'
+        'box4 box5'
+        'box6 box6';
     margin-right: 20px;
 }
 
-fieldset #nama {
-    grid-area: name;
-}
-
-fieldset #name {
+fieldset #box1 {
     grid-area: box1;
 }
 
-fieldset #komentar {
-    grid-area: comment;
-}
-
-fieldset #comment {
+fieldset #box2 {
     grid-area: box2;
 }
 
-fieldset #send {
-    grid-area: send;
+fieldset #box3 {
+    grid-area: box3;
+}
+
+fieldset #box4 {
+    grid-area: box4;
+}
+
+fieldset #box5 {
+    grid-area: box5;
+}
+
+fieldset #box6 {
+    grid-area: box6;
 }
 
 fieldset label {
@@ -124,6 +131,7 @@ footer p {
     font-weight: bold;
 }
 
+/* Responsive Breakpoint */
 @media (max-width: 700px) {
     .container {
         display: grid;
