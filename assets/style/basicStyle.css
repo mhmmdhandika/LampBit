@@ -14,7 +14,7 @@ body {
 
 /* Styling navbar yang bisa di gunakan disemua halaman, nantinya. */
 nav {
-    background-color: #2a8fb8cb;
+    background-color: rgb(107, 176, 205);
     display: flex;
     align-items: center;
     justify-items: center;
@@ -43,6 +43,19 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+/* Elemen aside sosmed */
+aside div a img {
+    transition: 0.3s;
+}
+
+aside div a img:hover {
+    transform: scale(1.3);
 }
 
 @media (max-width: 576px) {

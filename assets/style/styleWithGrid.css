@@ -1,13 +1,14 @@
 /* Styling yang memakai layout Grid.  */
 .container {
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: 1fr repeat(2, 4fr) 3fr;
     grid-template-areas:
-        'header header header header'
         'aside main main form'
         'footer footer footer footer';
     gap: 10px;
+
+    margin-top: 15px;
 }
 
 nav,
@@ -16,7 +17,7 @@ header {
 }
 
 header {
-    background-color: #4fc2f7;
+    background-color: rgb(166, 213, 223);
     background-image: url(../mountainBg.jpg);
     /* 
     src image: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
@@ -26,7 +27,6 @@ header {
     background-attachment: fixed;
     padding: 70px;
     font-size: 20px;
-    grid-area: header;
 }
 
 header h1,
@@ -36,6 +36,15 @@ header p {
 
 main {
     grid-area: main;
+}
+
+/* Link in container */
+.container a {
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
 }
 
 .card {
@@ -56,8 +65,15 @@ main article img {
     grid-area: aside;
     display: grid;
     justify-items: end;
-    padding-top: 30px;
     padding-right: 15px;
+}
+
+.spaceRight {
+    margin: 0 15px 0 0;
+}
+
+.spaceLeft {
+    margin: 0 0 0 50px;
 }
 
 /* Aside */
@@ -65,6 +81,9 @@ aside {
     grid-area: aside;
     display: flex;
     justify-content: center;
+}
+
+aside div {
     margin-top: 30px;
 }
 
@@ -128,7 +147,7 @@ fieldset input {
 /* Footer */
 footer {
     grid-area: footer;
-    background-color: #009fc7;
+    background-color: rgb(107, 176, 205);
     text-align: center;
     color: white;
     padding: 5px;
@@ -141,7 +160,7 @@ footer p {
 }
 
 /* Responsive Breakpoint */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .container {
         display: grid;
         grid-template-rows: repeat(5, auto);
@@ -160,8 +179,8 @@ footer p {
         margin: 0 10px 10px 10px;
     }
 
-    aside {
-        padding-top: 0;
+    .spaceLeft {
+        margin-left: 0;
     }
 
     aside div a img {
@@ -171,5 +190,11 @@ footer p {
 
     fieldset {
         width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .spaceLeft {
+        margin-left: 0;
     }
 }
