@@ -17,8 +17,13 @@ header {
 
 header {
     background-color: #4fc2f7;
-    /* background-image: url(https://media.istockphoto.com/photos/app-icons-picture-id479762254?b=1&k=20&m=479762254&s=170667a&w=0&h=aJreSxsMx6TvB2JMVnHkuPkEOgEcwR3a2laGWE6snBA=); */
-
+    background-image: url(../mountainBg.jpg);
+    /* 
+    src image: https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
+     */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
     padding: 70px;
     font-size: 20px;
     grid-area: header;
@@ -48,15 +53,19 @@ main {
 main article img {
     max-width: 150px;
     float: left;
-    padding-right: 20px;
-}
-
-aside {
     grid-area: aside;
     display: grid;
     justify-items: end;
     padding-top: 30px;
-    padding-right: 5px;
+    padding-right: 15px;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 aside div a img {
@@ -145,6 +154,10 @@ footer p {
             'footer';
         place-items: center;
         place-content: center;
+    }
+
+    .card {
+        margin: 0 10px 10px 10px;
     }
 
     aside {

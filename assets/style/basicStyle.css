@@ -14,10 +14,14 @@ body {
 
 /* Styling navbar yang bisa di gunakan disemua halaman, nantinya. */
 nav {
-    background-color: #0092c4;
+    background-color: #2a8fb8cb;
     display: flex;
     align-items: center;
     justify-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 }
 
 nav h2 {
