@@ -100,7 +100,7 @@ form {
 /* Form */
 fieldset {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(4, auto);
     place-content: end center;
     grid-template-areas:
